@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyMakers Media (3M)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .horizontal-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+.horizontal-menu li {
+    float: left;
+    position: relative; /* This is necessary for absolute positioning of dropdown */
+}
+
+.horizontal-menu li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal-menu li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.horizontal-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001; /* Ensure it is above other content */
+    left: 0;
+    top: 100%; /* Position directly below the button */
+}
+
+.horizontal-menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.horizontal-menu .dropdown-content a:hover {
+    background-color: #766a6a;
+}
+
+.horizontal-menu .dropdown:hover .dropdown-content {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001; 
+}
+
+        .vertical-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            height: calc(100% - 60px);
+            border-right: 1px solid #ccc;
+        }
+
+        .vertical-menu li a {
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vertical-menu li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            height: calc(100vh - 160px);
+            padding-top: 60px; /* to accommodate the fixed header */
+        }
+
+        footer {
+            background-color: #866262;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 8px 0 4px;
+        }
+
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form input[type="tel"],
+        .contact-form input[type="url"],
+        .contact-form textarea,
+        .contact-form select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 4px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        .contact-form button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+<header>
+    <h1>MelodyMakers Media (3M)</h1>
+</header>
+
+<nav>
+    <ul class="horizontal-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+       <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Services</a>
+    <div class="dropdown-content">
+        <a href="#audio">Audio Music Production</a>
+        <a href="#video">Video Production</a>
+    </div>
+</li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<nav>
+    <ul class="vertical-menu">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#audio">Audio Music Production</a></li>
+        <li><a href="#video">Video Production</a></li>
+        <li><a href="#features">Special Features</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#mission">Mission Statement</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>MelodyMakers Media, affectionately known as 3M, is a cutting-edge studio specializing in audio music and video production. Our mission is to create high-quality, captivating content that resonates with audiences worldwide. With a passion for innovation and a commitment to excellence, 3M is where creativity meets technology.</p>
+    </section>
+
+    <section id="audio">
+        <h2>Audio Music Production</h2>
+        <h3>Recording</h3>
+        <p>State-of-the-art recording facilities equipped with the latest technology to capture pristine sound.</p>
+        <h3>Mixing and Mastering</h3>
+        <p>Expert engineers ensure your music sounds polished and professional.</p>
+        <h3>Composition and Arranging</h3>
+        <p>Talented composers and arrangers to help bring your musical vision to life.</p>
+    </section>
+
+    <section id="video">
+        <h2>Video Production</h2>
+        <h3>Pre-Production</h3>
+        <p>Comprehensive planning, storyboarding, and scripting to ensure a smooth production process.</p>
+        <h3>Filming</h3>
+        <p>High-definition filming with professional-grade cameras and equipment.</p>
+        <h3>Post-Production</h3>
+        <p>Advanced editing, color grading, and special effects to create visually stunning videos.</p>
+    </section>
+
+    <section id="features">
+        <h2>Special Features</h2>
+        <p>Creative Collaboration: We work closely with artists, musicians, and filmmakers to understand their unique vision and bring it to fruition.</p>
+        <p>Cutting-Edge Technology: Our studio is equipped with the latest software and hardware to deliver top-notch audio and video quality.</p>
+        <p>Diverse Projects: From music videos and documentaries to commercials and live events, 3M handles a wide range of production projects.</p>
+    </section>
+
+    <section id="team">
+        <h2>Our Team</h2>
+        <p>Our team of seasoned professionals includes audio engineers, video producers, directors, editors, and creative consultants. Each member of the 3M family brings a wealth of experience and a passion for storytelling, ensuring that every project is executed with precision and creativity.</p>
+    </section>
+
+    <section id="mission">
+        <h2>Mission Statement</h2>
+        <p>At MelodyMakers Media, our mission is to transform ideas into compelling audio and visual experiences. We strive to be a beacon of creativity and innovation in the media production industry, dedicated to delivering content that entertains, inspires, and connects people.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Located at Gisenyi, Rwanda, MelodyMakers Media welcomes clients from all over the world. For inquiries, project quotes, or to book a session, please contact us at +250781959114 or visit our website at <a href="#">our website</a>.</p>
+    </section>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="service">Select a Service:</label>
+            <select id="service" name="service">
+                <option value="audio">Audio Music Production</option>
+                <option value="video">Video Production</option>
+                <option value="features">Special Features</option>
+                <option value="team">Our Team</option>
+                <option value="mission">Mission Statement</option>
+            </select>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <br><br><br><br>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 MelodyMakers Media. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
